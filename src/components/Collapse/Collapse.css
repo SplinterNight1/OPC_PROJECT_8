@@ -1,0 +1,61 @@
+.ContCollapse {
+   font-size: 24px;
+   width: 80%;
+   margin: 40px auto;
+   border-radius: 5px;
+   width: 100%;
+}
+.TittleCont {
+   background-color: #FF6060;
+   padding: 10px 20px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+}
+.TittleCollapse {
+   font-weight: 500;
+   margin: 0;
+   color: white;
+   font-size: 18px;
+}
+
+@keyframes slideIn {
+   to {
+     transform: translateY(0);
+     opacity: 100%;
+   }
+ }
+.TextCollapse {
+   background-color: #F6F6F6;
+   font-weight: 300;
+   padding: 30px 20px;
+   margin: 0;
+   color: #FF6060;
+   font-size: 17px;
+   opacity: 50%;
+   transform: translateY(-25%);
+   animation: slideIn 0.1s forwards; /* Adjust the duration as needed */
+   animation-delay:  0.1s; /* Adjust the delay as needed */
+   z-index: 1;
+   /* position: relative; */
+   transform: translateY(0);
+   transition: all .5s ease;
+}
+
+
+
+
+.TextCollapse p {
+   padding: 0 0 5px 0;
+}
+
+.CollapseHomeTwo{
+   display: flex;
+   gap: 35px;
+   @media (max-width: 1001px) {
+      display: block;
+   }
+}
+
