@@ -1,10 +1,6 @@
-// IMPORTS
 import { Link } from 'react-router-dom'
 import './error.css' 
 
-
-
-// Page erreur 404
 function Error() {
    return (
       <section className='ContError'>

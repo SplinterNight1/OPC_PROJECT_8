@@ -3,23 +3,18 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './location.css';
 
-// COMPONENTS
 import Error from '../../pages/Error/Error';
 import Slider from '../../components/Slider/Slider';
 import Rating from '../../components/Rating/Rating';
 import Collapse from '../../components/Collapse/Collapse'
 
-// ASSETS
 import DataLocation from '../../assets/location.json';
 
-
-
-// Page Logement > Contient le Composant Slider, compo Rating et le composant Collapsedescription ainsi que les infos du logement et du propriétaire
 function Logement() {
    const [logement, setLogement] = useState(null); 
-   const { id } = useParams(); // Récupère l'id du logement dans l'url
+   const { id } = useParams(); 
 
-   useEffect(() => {  // Récupère les infos du logement en fonction de l'id
+   useEffect(() => {  
       const data = DataLocation.find(location => location.id === id);
       if (data) {
       setLogement(data);
@@ -28,11 +23,10 @@ function Logement() {
    }
    }, [id]);
 
-   if (!logement) { // Si l'id n'existe pas, affiche la page d'erreur
+   if (!logement) {
       return (<Error />);
    }
 
-   // Crréer un JSON pour le passer en props au composant Collapsehome
    const data = [
       {
          title: 'Description',
@@ -40,7 +34,6 @@ function Logement() {
       },
       {
          title: 'Equipements',
-         // Créer une liste avec les équipements
          text: logement.equipments.map(equipment => (
             <p className='TextCollapse' key={equipment}>{equipment}</p>
          ))

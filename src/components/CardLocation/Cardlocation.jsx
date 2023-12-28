@@ -1,12 +1,8 @@
-// IMPORTS
 import { Link } from 'react-router-dom'
 import './CardLocation.css'
 
-// ASSETS
 import DataLocation from '../../assets/location.json'
 
-
-// Composant CardLocation > Génère des cards avec les images des locations, dynamiquement depuis le fichier JSON
 function Cardlocation() {
    return (
       <section className='ContLocation'>
