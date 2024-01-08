@@ -10,6 +10,10 @@
 
 .FooterText {
    color: white;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 2.5rem; 
    font-size: 18px;
    @media (max-width: 1001px) {
       font-size: 15px;
