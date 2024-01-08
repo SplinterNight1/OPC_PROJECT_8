@@ -1,6 +1,6 @@
 // IMPORTS
 import { useState } from 'react'
-import './slider.css'
+import './slider.scss'
 
 import ArrowRight from '../../assets/arrow-right.png';
 import ArrowLeft from '../../assets/arrow-left.png';

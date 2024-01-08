@@ -1,4 +1,4 @@
-import './home.css'
+import './home.scss'
 
 import Banner from '../../assets/banner-home.png'
 

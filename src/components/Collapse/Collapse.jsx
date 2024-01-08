@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Collapse.css'
+import './Collapse.scss'
 
 import ArrowDown from '../../assets/arrow-down.png'
 import ArrowUp from '../../assets/arrow-up.png'

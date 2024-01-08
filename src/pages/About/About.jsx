@@ -1,4 +1,4 @@
-import './about.css'
+import './about.scss'
 
 import Collapse from '../../components/Collapse/Collapse'
 

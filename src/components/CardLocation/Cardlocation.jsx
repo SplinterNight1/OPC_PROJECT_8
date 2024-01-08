@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './CardLocation.css'
+import './CardLocation.scss'
 
 import DataLocation from '../../assets/location.json'
 

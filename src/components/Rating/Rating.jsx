@@ -1,4 +1,4 @@
-import './rating.css';
+import './rating.scss';
 
 import StarActive from '../../assets/star-active.png';
 import StarInactive from '../../assets/star-inactive.png';
