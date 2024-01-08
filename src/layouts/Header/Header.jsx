@@ -1,12 +1,7 @@
-// IMPORTS
 import { Link, NavLink } from 'react-router-dom'
-import './header.css'
+import './header.scss'
 
-// ASSETS
 import Logo from '../../assets/logo.png'
-
-
-
 
 // Layout Header 
 function Header() {
