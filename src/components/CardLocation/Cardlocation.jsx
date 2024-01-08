@@ -8,6 +8,10 @@ function Cardlocation() {
       <section className='ContLocation'>
          {DataLocation.map((location) => (
 
+         /*
+          Link est utilisée pour créer des liens de navigation entre différentes vues de mon application
+          Evite les refresh de page
+         */
             <Link to={`/location/${location.id}`} key={location.id} >
                <figure className='ContCard'>
                   <img className='ImgLocation' src={location.cover} alt={location.title}/>
