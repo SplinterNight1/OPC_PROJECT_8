@@ -1,7 +1,12 @@
 import './home.css'
+
 import Banner from '../../assets/banner-home.png'
+
 import Cardlocation from '../../components/CardLocation/Cardlocation'
 
+/* Page Home 
+  Contient une bannière et le composant Cardlocation
+*/
 function Home() {
    return (
       <section>

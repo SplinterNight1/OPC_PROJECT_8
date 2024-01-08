@@ -10,6 +10,11 @@ import Collapse from '../../components/Collapse/Collapse'
 
 import DataLocation from '../../assets/location.json';
 
+/* Page Logement 
+   Contient le Composant Slider, 
+   compo Rating et le composant Collapsedescription 
+   et que les infos du logement et du propriétaire
+*/
 function Logement() {
    const [logement, setLogement] = useState(null); 
    const { id } = useParams(); 
