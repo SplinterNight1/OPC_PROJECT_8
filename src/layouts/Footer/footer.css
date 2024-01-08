@@ -1,7 +1,6 @@
 .ContFooter {
    background-color: black;
-   height: 210px;
-
+   height: 209px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -10,12 +9,18 @@
 
 .FooterText {
    color: white;
-   position: absolute;
    bottom: 0;
-   width: 100%;
+   width: 133px;
    height: 2.5rem; 
    font-size: 18px;
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   margin: 0;
    @media (max-width: 1001px) {
       font-size: 15px;
+   }
+   @media (min-width: 376px) {
+      width: 100%;
    }
 }
