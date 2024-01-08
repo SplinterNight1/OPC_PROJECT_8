@@ -31,9 +31,10 @@ function Collapse({ data }) {
           <div className="TittleCont" onClick={() => toggleCollapse(index)}>
             <h3 className='TittleCollapse'>{collapse.title}</h3>
             {openIndexes.includes(index) ? (
-              <img src={ArrowUp} alt="Arrow" />
+              <img src={ArrowDown} alt="Arrow" />
             ) : (
-               <img src={ArrowDown} alt="Arrow" />
+             
+               <img src={ArrowUp} alt="Arrow" />
             )}
           </div>
           
